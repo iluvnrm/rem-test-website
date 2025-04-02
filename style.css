@@ -7,7 +7,7 @@
 
 nav {
     height: 80px;
-    background: #28047a;
+    background: #afdfff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,6 @@ nav {
 }
 
 .logo {
-
     color: #000;
     font-size: 1.5rem;
     font-weight: bold;
@@ -23,9 +22,9 @@ nav {
     padding: 0 2rem;
 }
 
-nav a  {
+nav a {
     text-decoration: none;
-    color:#000;
+    color: #000;
     padding: 0 1.5rem;
 }
 
@@ -34,44 +33,42 @@ nav a:hover {
 }
 
 .hero {
-    background: #28047a;
+    background: #afdfff;
 }
 
 .hero-container {
     display: grid;
-    grid-template-columns: lfr lfr;
+    grid-template-columns: 1fr 1fr;
     height: 95vh;
-    padding:3rem calc((100vw - 1300px) / 2);
-
+    padding: 3rem calc((100vw - 1300px) / 2);
 }
 
 .column-left {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: flex-start; 
-    color: #000; 
-    padding: Ørem 2rem;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
 }
 
-.column-left h1 { 
-    margin-bottom: 1rem; 
-    font-size: 3rem; 
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
 }
 
 .column-left p {
-    margin-bottom: 2rem; 
-    font-size: 1.5rem; 
-    line-height: 1.5; 
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 button {
-    padding: 1rem 3rem; 
-    font-size: 1rem; 
-    border: none; 
-    color: #3701b4; 
-    background: #000; 
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #afdfff;
+    background: #000;
     cursor: pointer;
     border-radius: 50px;
 }
@@ -89,12 +86,48 @@ button:hover {
 }
 
 .hero-image {
-    width: 50%;
-    height: 50%;
+    max-width: 100%;
+    height: auto;
 }
+
 
 @media screen and (max-width: 768px) {
     .hero-container {
-        grid-template-columns: lfr;
+        grid-template-columns: 1fr;
     }
+}
+
+.contact {
+    background: #afdfff;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    gap: 2rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 1.5rem;
 }
